@@ -8,7 +8,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 
 import pathlib
-data_dir=pathlib.Path("C:\\Users\\Umesh\\Downloads\\Compressed\\COVID-CT-master\\COVID-CT-master\\Images-processed")
+data_dir=pathlib.Path("C:\\Users\\Umesh\\Downloads\\Covid_CT_Dataset") # Update Full Path Of Dataset According to your System
 
 image_count = len(list(data_dir.glob('*/*.png'))) + len(list(data_dir.glob('*/*.jpg')))
 print(image_count)
